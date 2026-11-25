@@ -1,4 +1,4 @@
-<!-- Reemplaza tu correo, tu LinkedIn y el enlace de tu portafolio -->
+<!-- Reemplaza tu correo y tu LinkedIn -->
 <!-- La carpeta claro/ es la versión para GitHub en tema claro; se regenera con: node .github/scripts/claro.mjs -->
 
 <picture><source media="(prefers-color-scheme: light)" srcset="claro/banner.svg" /><img src="banner.svg" width="100%" alt="Eimy Ruiz" /></picture>
@@ -7,7 +7,7 @@
   <a href="https://github.com/EimyRuiz"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-github.svg" /><img src="btn-github.svg" height="52" alt="GitHub" /></picture></a>
   <a href="https://www.linkedin.com/in/TU_PERFIL"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-linkedin.svg" /><img src="btn-linkedin.svg" height="52" alt="LinkedIn" /></picture></a>
   <a href="mailto:tu-correo@ejemplo.com"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-correo.svg" /><img src="btn-correo.svg" height="52" alt="Correo" /></picture></a>
-  <a href="https://TU_PORTAFOLIO.com"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-portafolio.svg" /><img src="btn-portafolio.svg" height="52" alt="Portafolio" /></picture></a>
+  <a href="https://eimyruiz.github.io/Portafolio_EimyRuiz/"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-portafolio.svg" /><img src="btn-portafolio.svg" height="52" alt="Portafolio" /></picture></a>
 </p>
 
 <br/>
@@ -37,12 +37,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/EimyRuiz/Hi-Tramatic"><picture><source media="(prefers-color-scheme: light)" srcset="claro/proyecto-02.svg" /><img src="proyecto-02.svg" width="100%" alt="02 / HI-TRAMATIC" /></picture></a>
+  <a href="https://github.com/EimyRuiz/Hi-Tramatic"><picture><source media="(prefers-color-scheme: light)" srcset="claro/proyecto-02.svg" /><img src="proyecto-02.svg" width="100%" alt="02 / HI-TRAMATIC — Taller de mecánica" /></picture></a>
   <a href="https://github.com/EimyRuiz/Hi-Tramatic"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-repo.svg" /><img src="btn-repo.svg" height="52" alt="Repositorio de HI-TRAMATIC" /></picture></a>
 </p>
 
 <p align="center">
   <a href="https://github.com/EimyRuiz/Portafolio_EimyRuiz"><picture><source media="(prefers-color-scheme: light)" srcset="claro/proyecto-03.svg" /><img src="proyecto-03.svg" width="100%" alt="03 / PORTAFOLIO — Sitio web personal" /></picture></a>
+  <a href="https://eimyruiz.github.io/Portafolio_EimyRuiz/"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-pagina.svg" /><img src="btn-pagina.svg" height="52" alt="Ver página de PORTAFOLIO" /></picture></a>
   <a href="https://github.com/EimyRuiz/Portafolio_EimyRuiz"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-repo.svg" /><img src="btn-repo.svg" height="52" alt="Repositorio de PORTAFOLIO" /></picture></a>
 </p>
 
