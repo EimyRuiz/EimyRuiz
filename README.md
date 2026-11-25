@@ -42,9 +42,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/EimyRuiz/ALQUIPC"><picture><source media="(prefers-color-scheme: light)" srcset="claro/proyecto-03.svg" /><img src="proyecto-03.svg" width="100%" alt="03 / ALQUIPC — Alquiler de portátiles" /></picture></a>
-  <a href="https://eimyruiz.github.io/ALQUIPC/"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-pagina.svg" /><img src="btn-pagina.svg" height="52" alt="Ver página de ALQUIPC" /></picture></a>
-  <a href="https://github.com/EimyRuiz/ALQUIPC"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-repo.svg" /><img src="btn-repo.svg" height="52" alt="Repositorio de ALQUIPC" /></picture></a>
+  <a href="https://github.com/EimyRuiz/Portafolio_EimyRuiz"><picture><source media="(prefers-color-scheme: light)" srcset="claro/proyecto-03.svg" /><img src="proyecto-03.svg" width="100%" alt="03 / PORTAFOLIO — Sitio web personal" /></picture></a>
+  <a href="https://github.com/EimyRuiz/Portafolio_EimyRuiz"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-repo.svg" /><img src="btn-repo.svg" height="52" alt="Repositorio de PORTAFOLIO" /></picture></a>
 </p>
 
 <br/>
