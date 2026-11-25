@@ -24,7 +24,7 @@ Me gusta que lo que construyo funcione bien y se vea limpio.
 <h3 align="center">Stack</h3>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=python,django,js,nodejs,html,css,bootstrap,react,nextjs,docker,git&theme=dark" alt="stack" />
+  <img src="stack.png" width="760" alt="Stack" />
 </p>
 
 <br/>
