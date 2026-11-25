@@ -14,11 +14,8 @@
 <h3 align="center">Sobre mí</h3>
 
 <p align="center">
-Aprendiz de Análisis y Desarrollo de Software en el SENA.<br/>
-Trabajo con Python y Django, y estoy sumando React, Next.js y Docker.<br/>
-Me gusta que lo que construyo funcione bien y se vea limpio.
+  <img src="sobre-mi.png" width="100%" alt="Eimy Ruiz — aprendiz de ADSO en el SENA, Medellín, Colombia. Python, Django, React, Next.js y Docker." />
 </p>
-
 <br/>
 
 <h3 align="center">Stack</h3>
