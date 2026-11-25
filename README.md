@@ -1,11 +1,12 @@
-<!-- Reemplaza TU_USUARIO, tu correo y tu LinkedIn. El banner debe llamarse banner.png y estar en este mismo repositorio -->
+<!-- Reemplaza TU_USUARIO, tu correo, tu LinkedIn y el enlace de tu portafolio -->
 
 <img src="banner.png" width="100%" alt="Eimy Ruiz" />
 
 <p align="center">
-  <a href="https://github.com/TU_USUARIO"><img src="https://skillicons.dev/icons?i=github&theme=dark" height="42" alt="GitHub" /></a>&nbsp;&nbsp;
-  <a href="https://www.linkedin.com/in/TU_PERFIL"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" height="42" alt="LinkedIn" /></a>&nbsp;&nbsp;
-  <a href="mailto:tu-correo@ejemplo.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" height="42" alt="Correo" /></a>
+  <a href="https://github.com/TU_USUARIO"><img src="btn-github.png" height="52" alt="GitHub" /></a>
+  <a href="https://www.linkedin.com/in/TU_PERFIL"><img src="btn-linkedin.png" height="52" alt="LinkedIn" /></a>
+  <a href="mailto:tu-correo@ejemplo.com"><img src="btn-correo.png" height="52" alt="Correo" /></a>
+  <a href="https://TU_PORTAFOLIO.com"><img src="btn-portafolio.png" height="52" alt="Portafolio" /></a>
 </p>
 
 <br/>
