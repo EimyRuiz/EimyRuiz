@@ -36,7 +36,6 @@
   <img src="proyecto-03.svg" width="49%" alt="03 / ALQUIPC — Web" />
   <img src="proyecto-04.svg" width="49%" alt="04 / ALQUILER DE HABITACIONES — Web · Calidad" />
   <img src="proyecto-05.svg" width="49%" alt="05 / CALIDAD Y SEGURIDAD — Calidad" />
-  <img src="proyecto-06.svg" width="49%" alt="06 / PASARELA DE PAGOS — Backend" />
 </p>
 
 <br/>
