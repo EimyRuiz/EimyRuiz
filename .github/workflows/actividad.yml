@@ -1,0 +1,35 @@
+name: Actualizar actividad
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # todos los días, 1:17 a. m. en Colombia
+  workflow_dispatch: # botón "Run workflow" en la pestaña Actions
+  push:
+    branches: [main]
+    paths: [".github/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actividad
+  cancel-in-progress: true
+
+jobs:
+  actividad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generar actividad.svg
+        run: node .github/scripts/actividad.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USUARIO: ${{ github.repository_owner }}
+      - name: Guardar si cambió
+        run: |
+          git add actividad.svg
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Actualizo actividad.svg"
+          git push
