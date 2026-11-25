@@ -32,7 +32,7 @@ function texto(t, x, y, tam, { peso = 400, color = CREMA, ancla = 'inicio', clas
 async function pedirDatos(usuario, token) {
   const query = `query($u:String!){user(login:$u){
     repositories(first:100,ownerAffiliations:OWNER,isFork:false,privacy:PUBLIC){totalCount nodes{
-      languages(first:10,orderBy:{field:SIZE,direction:DESC}){edges{size node{name}}}}}
+      name defaultBranchRef{target{oid}}}}
     contributionsCollection{totalCommitContributions contributionCalendar{totalContributions
       weeks{contributionDays{date contributionCount}}}}}}`;
   const r = await fetch('https://api.github.com/graphql', {
@@ -42,13 +42,35 @@ async function pedirDatos(usuario, token) {
   });
   const j = await r.json();
   if (!r.ok || j.errors || !j.data?.user) throw new Error(`GitHub respondió ${r.status}: ${JSON.stringify(j.errors || j.message || j)}`);
-  return resumir(j.data.user);
+  const u = j.data.user, arboles = [];
+  for (const r of u.repositories.nodes) {
+    // se salta los repos vacíos y el del perfil (solo tiene este README)
+    if (!r.defaultBranchRef || r.name.toLowerCase() === usuario.toLowerCase()) continue;
+    const t = await fetch(`https://api.github.com/repos/${usuario}/${r.name}/git/trees/${r.defaultBranchRef.target.oid}?recursive=1`, {
+      headers: { Authorization: `Bearer ${token}`, 'User-Agent': 'actividad-readme' },
+    });
+    if (!t.ok) throw new Error(`No pude leer ${r.name}: GitHub respondió ${t.status}`);
+    arboles.push((await t.json()).tree);
+  }
+  return resumir(u, contarCodigo(arboles));
 }
 
-export function resumir(u) {
+// Bytes por lenguaje de código propio: sin librerías de terceros ni copias del mismo archivo
+const AJENO = /(^|\/)(node_modules|bower_components|vendor|venv|\.venv|env|site-packages|__pycache__|dist|build|staticfiles|migrations|\.github)\/|(^|\/)static\/(admin|rest_framework)\/|\.min\.(js|css)$|(^|\/)(jquery|bootstrap)[^/]*\.(js|css)$/i;
+const LENGUAJE = { js: 'JavaScript', mjs: 'JavaScript', cjs: 'JavaScript', jsx: 'JavaScript', ts: 'TypeScript', tsx: 'TypeScript', py: 'Python', html: 'HTML', css: 'CSS', scss: 'SCSS', ejs: 'EJS', php: 'PHP', java: 'Java', cs: 'C#', c: 'C', cpp: 'C++', go: 'Go', rb: 'Ruby', kt: 'Kotlin', dart: 'Dart', vue: 'Vue', sh: 'Shell' };
+export function contarCodigo(arboles) {
+  const bytes = {}, vistos = new Set();
+  for (const a of arboles.flat()) {
+    const l = LENGUAJE[a.path.split('.').pop().toLowerCase()];
+    if (a.type !== 'blob' || !l || AJENO.test(a.path) || vistos.has(a.sha)) continue;
+    vistos.add(a.sha);
+    bytes[l] = (bytes[l] || 0) + a.size;
+  }
+  return bytes;
+}
+
+export function resumir(u, bytes) {
   const col = u.contributionsCollection, cal = col.contributionCalendar;
-  const bytes = {};
-  for (const r of u.repositories.nodes) for (const e of r.languages.edges) bytes[e.node.name] = (bytes[e.node.name] || 0) + e.size;
   const total = Object.values(bytes).reduce((a, b) => a + b, 0);
   const lenguajes = Object.entries(bytes).sort((a, b) => b[1] - a[1]).slice(0, 5)
     .map(([nombre, b]) => ({ nombre, pct: 100 * b / total }));

@@ -29,13 +29,21 @@
 
 <h3 align="center"><img src="titulo-proyectos.svg" width="520" alt="Proyectos" /></h3>
 
-<!-- Para enlazar un proyecto, envuelve su imagen: <a href="URL_DEL_REPO"><img ... /></a> -->
 <p align="center">
-  <img src="proyecto-01.svg" width="49%" alt="01 / HI-TRAMATIC — Web · Backend" />
-  <img src="proyecto-02.svg" width="49%" alt="02 / EDUCAN — Web · Backend" />
-  <img src="proyecto-03.svg" width="49%" alt="03 / ALQUIPC — Web" />
-  <img src="proyecto-04.svg" width="49%" alt="04 / ALQUILER DE HABITACIONES — Web · Calidad" />
-  <img src="proyecto-05.svg" width="49%" alt="05 / CALIDAD Y SEGURIDAD — Calidad" />
+  <a href="https://github.com/EimyRuiz/EduCanSQlite"><img src="proyecto-01.svg" width="100%" alt="01 / EDUCAN — Entrenamiento canino profesional" /></a>
+  <a href="https://eimyruiz.pythonanywhere.com/"><img src="btn-pagina.svg" height="52" alt="Ver página de EDUCAN" /></a>
+  <a href="https://github.com/EimyRuiz/EduCanSQlite"><img src="btn-repo.svg" height="52" alt="Repositorio de EDUCAN" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/EimyRuiz/Hi-Tramatic"><img src="proyecto-02.svg" width="100%" alt="02 / HI-TRAMATIC" /></a>
+  <a href="https://github.com/EimyRuiz/Hi-Tramatic"><img src="btn-repo.svg" height="52" alt="Repositorio de HI-TRAMATIC" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/EimyRuiz/ALQUIPC"><img src="proyecto-03.svg" width="100%" alt="03 / ALQUIPC — Alquiler de portátiles" /></a>
+  <a href="https://eimyruiz.github.io/ALQUIPC/"><img src="btn-pagina.svg" height="52" alt="Ver página de ALQUIPC" /></a>
+  <a href="https://github.com/EimyRuiz/ALQUIPC"><img src="btn-repo.svg" height="52" alt="Repositorio de ALQUIPC" /></a>
 </p>
 
 <br/>
