@@ -1,9 +1,10 @@
-// Genera actividad.svg con los datos reales del perfil.
+// Genera actividad.svg (y claro/actividad.svg) con los datos reales del perfil.
 // Lo ejecuta .github/workflows/actividad.yml; no necesita instalar nada.
 // Sin GITHUB_TOKEN dibuja la versión "pendiente", sin cifras.
-import { readFileSync, writeFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { aclarar } from './claro.mjs';
 
 const AQUI = path.dirname(fileURLToPath(import.meta.url));
 const SALIDA = process.env.SALIDA || path.join(AQUI, '..', '..', 'actividad.svg');
@@ -203,6 +204,10 @@ export function dibujar(d) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const token = process.env.GITHUB_TOKEN, usuario = process.env.USUARIO;
   if (token && !usuario) throw new Error('Falta la variable USUARIO');
-  writeFileSync(SALIDA, dibujar(token ? await pedirDatos(usuario, token) : null));
+  const svg = dibujar(token ? await pedirDatos(usuario, token) : null);
+  writeFileSync(SALIDA, svg);
+  const claro = path.join(path.dirname(SALIDA), 'claro');
+  mkdirSync(claro, { recursive: true });
+  writeFileSync(path.join(claro, path.basename(SALIDA)), aclarar(svg)); // tema claro
   console.log(`Listo: ${SALIDA}`);
 }

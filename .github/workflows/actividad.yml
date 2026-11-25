@@ -27,7 +27,7 @@ jobs:
           USUARIO: ${{ github.repository_owner }}
       - name: Guardar si cambió
         run: |
-          git add actividad.svg
+          git add actividad.svg claro/actividad.svg
           git diff --cached --quiet && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

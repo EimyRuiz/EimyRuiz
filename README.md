@@ -1,56 +1,57 @@
 <!-- Reemplaza tu correo, tu LinkedIn y el enlace de tu portafolio -->
+<!-- La carpeta claro/ es la versión para GitHub en tema claro; se regenera con: node .github/scripts/claro.mjs -->
 
-<img src="banner.svg" width="100%" alt="Eimy Ruiz" />
+<picture><source media="(prefers-color-scheme: light)" srcset="claro/banner.svg" /><img src="banner.svg" width="100%" alt="Eimy Ruiz" /></picture>
 
 <p align="center">
-  <a href="https://github.com/EimyRuiz"><img src="btn-github.svg" height="52" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/TU_PERFIL"><img src="btn-linkedin.svg" height="52" alt="LinkedIn" /></a>
-  <a href="mailto:tu-correo@ejemplo.com"><img src="btn-correo.svg" height="52" alt="Correo" /></a>
-  <a href="https://TU_PORTAFOLIO.com"><img src="btn-portafolio.svg" height="52" alt="Portafolio" /></a>
+  <a href="https://github.com/EimyRuiz"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-github.svg" /><img src="btn-github.svg" height="52" alt="GitHub" /></picture></a>
+  <a href="https://www.linkedin.com/in/TU_PERFIL"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-linkedin.svg" /><img src="btn-linkedin.svg" height="52" alt="LinkedIn" /></picture></a>
+  <a href="mailto:tu-correo@ejemplo.com"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-correo.svg" /><img src="btn-correo.svg" height="52" alt="Correo" /></picture></a>
+  <a href="https://TU_PORTAFOLIO.com"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-portafolio.svg" /><img src="btn-portafolio.svg" height="52" alt="Portafolio" /></picture></a>
 </p>
 
 <br/>
 
-<h3 align="center"><img src="titulo-sobre-mi.svg" width="520" alt="Sobre mí" /></h3>
+<h3 align="center"><picture><source media="(prefers-color-scheme: light)" srcset="claro/titulo-sobre-mi.svg" /><img src="titulo-sobre-mi.svg" width="520" alt="Sobre mí" /></picture></h3>
 
 <p align="center">
-  <img src="sobre-mi.svg" width="100%" alt="Eimy Ruiz — aprendiz de ADSO en el SENA, Medellín, Colombia. Python, Django, React, Next.js y Docker." />
+  <picture><source media="(prefers-color-scheme: light)" srcset="claro/sobre-mi.svg" /><img src="sobre-mi.svg" width="100%" alt="Eimy Ruiz — aprendiz de ADSO en el SENA, Medellín, Colombia. Python, Django, React, Next.js y Docker." /></picture>
 </p>
 
 <br/>
 
-<h3 align="center"><img src="titulo-stack.svg" width="520" alt="Stack" /></h3>
+<h3 align="center"><picture><source media="(prefers-color-scheme: light)" srcset="claro/titulo-stack.svg" /><img src="titulo-stack.svg" width="520" alt="Stack" /></picture></h3>
 
 <p align="center">
-  <img src="stack.svg" width="760" alt="Stack: Python, Django, JavaScript, Node.js, HTML, CSS, Bootstrap, React, Next.js, Docker y Git" />
+  <picture><source media="(prefers-color-scheme: light)" srcset="claro/stack.svg" /><img src="stack.svg" width="760" alt="Stack: Python, Django, JavaScript, Node.js, HTML, CSS, Bootstrap, React, Next.js, Docker y Git" /></picture>
 </p>
 
 <br/>
 
-<h3 align="center"><img src="titulo-proyectos.svg" width="520" alt="Proyectos" /></h3>
+<h3 align="center"><picture><source media="(prefers-color-scheme: light)" srcset="claro/titulo-proyectos.svg" /><img src="titulo-proyectos.svg" width="520" alt="Proyectos" /></picture></h3>
 
 <p align="center">
-  <a href="https://github.com/EimyRuiz/EduCanSQlite"><img src="proyecto-01.svg" width="100%" alt="01 / EDUCAN — Entrenamiento canino profesional" /></a>
-  <a href="https://eimyruiz.pythonanywhere.com/"><img src="btn-pagina.svg" height="52" alt="Ver página de EDUCAN" /></a>
-  <a href="https://github.com/EimyRuiz/EduCanSQlite"><img src="btn-repo.svg" height="52" alt="Repositorio de EDUCAN" /></a>
+  <a href="https://github.com/EimyRuiz/EduCanSQlite"><picture><source media="(prefers-color-scheme: light)" srcset="claro/proyecto-01.svg" /><img src="proyecto-01.svg" width="100%" alt="01 / EDUCAN — Entrenamiento canino profesional" /></picture></a>
+  <a href="https://eimyruiz.pythonanywhere.com/"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-pagina.svg" /><img src="btn-pagina.svg" height="52" alt="Ver página de EDUCAN" /></picture></a>
+  <a href="https://github.com/EimyRuiz/EduCanSQlite"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-repo.svg" /><img src="btn-repo.svg" height="52" alt="Repositorio de EDUCAN" /></picture></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/EimyRuiz/Hi-Tramatic"><img src="proyecto-02.svg" width="100%" alt="02 / HI-TRAMATIC" /></a>
-  <a href="https://github.com/EimyRuiz/Hi-Tramatic"><img src="btn-repo.svg" height="52" alt="Repositorio de HI-TRAMATIC" /></a>
+  <a href="https://github.com/EimyRuiz/Hi-Tramatic"><picture><source media="(prefers-color-scheme: light)" srcset="claro/proyecto-02.svg" /><img src="proyecto-02.svg" width="100%" alt="02 / HI-TRAMATIC" /></picture></a>
+  <a href="https://github.com/EimyRuiz/Hi-Tramatic"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-repo.svg" /><img src="btn-repo.svg" height="52" alt="Repositorio de HI-TRAMATIC" /></picture></a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/EimyRuiz/ALQUIPC"><img src="proyecto-03.svg" width="100%" alt="03 / ALQUIPC — Alquiler de portátiles" /></a>
-  <a href="https://eimyruiz.github.io/ALQUIPC/"><img src="btn-pagina.svg" height="52" alt="Ver página de ALQUIPC" /></a>
-  <a href="https://github.com/EimyRuiz/ALQUIPC"><img src="btn-repo.svg" height="52" alt="Repositorio de ALQUIPC" /></a>
+  <a href="https://github.com/EimyRuiz/ALQUIPC"><picture><source media="(prefers-color-scheme: light)" srcset="claro/proyecto-03.svg" /><img src="proyecto-03.svg" width="100%" alt="03 / ALQUIPC — Alquiler de portátiles" /></picture></a>
+  <a href="https://eimyruiz.github.io/ALQUIPC/"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-pagina.svg" /><img src="btn-pagina.svg" height="52" alt="Ver página de ALQUIPC" /></picture></a>
+  <a href="https://github.com/EimyRuiz/ALQUIPC"><picture><source media="(prefers-color-scheme: light)" srcset="claro/btn-repo.svg" /><img src="btn-repo.svg" height="52" alt="Repositorio de ALQUIPC" /></picture></a>
 </p>
 
 <br/>
 
-<h3 align="center"><img src="titulo-actividad.svg" width="520" alt="Actividad" /></h3>
+<h3 align="center"><picture><source media="(prefers-color-scheme: light)" srcset="claro/titulo-actividad.svg" /><img src="titulo-actividad.svg" width="520" alt="Actividad" /></picture></h3>
 
 <!-- actividad.svg se actualiza solo cada día: .github/workflows/actividad.yml -->
 <p align="center">
-  <img src="actividad.svg" width="100%" alt="Actividad en GitHub: contribuciones, lenguajes más usados y contribuciones por semana" />
+  <picture><source media="(prefers-color-scheme: light)" srcset="claro/actividad.svg" /><img src="actividad.svg" width="100%" alt="Actividad en GitHub: contribuciones, lenguajes más usados y contribuciones por semana" /></picture>
 </p>
